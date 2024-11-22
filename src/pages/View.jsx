@@ -20,7 +20,7 @@ setViewfood( allRecipies.find(item=>item.id==id))
    <>
    <Header/>
    <div className='row'>
-    <div style={{padding:"140px"}} className=' d-flex col-6-lg '>
+    <div style={{padding:"140px"}} className=' d-flex col-md-6-lg '>
       <img width={'500px'} src={viewfood?.image} alt="" />
       <div style={{marginLeft:"120px",marginTop:"90px"}}>
         <h1 className='font-bold mt-3'  style={{fontSize:"30px"}}>Name : <span className='text-danger'>{viewfood?.name} </span> </h1>
@@ -32,15 +32,6 @@ setViewfood( allRecipies.find(item=>item.id==id))
     </div>
    
    </div>
-   {/* <div className='ms-5'>
-    <div className='grid grid-cols-2 items-center h-screen  '>
-      <img width={'350px'} height={'250px'} src={viewfood?.image} alt="" />
-       <h3 className='text-bold'>PID : 234</h3>
-          <h1 className='text-5xl font-bold'>{viewfood?.name}</h1>
-          <h4 className='text-bold text-red-600 text-2xl'>$ {viewfood?.price}</h4>
-          <h4>cuisin : asian food</h4>
-    </div>
-   </div> */}
    </>
   )
 }
